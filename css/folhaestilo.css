@@ -36,6 +36,7 @@ main{
 
 picture{
     align-self: center;
+    display: flex; /*parei aqui verificar */
 }
 
 h2{
