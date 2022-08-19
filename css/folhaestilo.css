@@ -12,6 +12,7 @@
     --corcream: hsl(30,38%,92%);
     --corverydarkblue: hsl(212,21%,14%);
     --corgrayish: hsl(228,12%,48%);
+    --corwhite: hsl(0,0%,100%);
 
 }
 
@@ -20,9 +21,21 @@
     margin: 0px;
 }
 
+body{
+    background-color: var(--corcream);
+}
+
 main{
-    width: 330px;
-    padding: 10px;
+    width: 350px;
+    height: 580px;
+    border-radius: 15px;
+    background-color: var(--corwhite);
+    margin: auto;
+    margin-top: 10vh;
+}
+
+picture{
+    align-self: center;
 }
 
 h2{
@@ -30,47 +43,71 @@ h2{
     font-size: 15px;
     font-weight: 500;
     color: var(--corgrayish);
-    padding: 10px;
+    padding: 20px;
 }
 
 h1{
     font-family: var(--font2);
     font-size: 30px;
-    padding: 10px;
+    padding: 0px 20px 20px 20px;
 }
 
 h2.preco{
     font-family: var(--font2);
     color: var(--cordark);
     font-size: 30px;
+    padding: 10px;
 
-    border:  2px solid black;
-    display: inline;
+    /* border:  2px solid black; */
+    display: inline-block;
 }
 
 p{
     font-family: var(--font1);
     font-size: 14px;
+    line-height: 25px;
     color: var(--corgrayish);
-    padding: 10px;
+    padding: 0px 20px;
 }
 
 p.valor{
     display: inline-block;
-    border:  2px solid black;
+    font-size: 12px;
+    padding-left: 0px;
+    /* border:  2px solid black; */
 }
 
 button{
+    display: block;
     width: 300px;
     height: 30px;
+    margin: auto;
     border-radius: 5px;
     border: none;
     background-color: var(--cordark);
-    color: white;
+    color: var(--corwhite);
     padding: 10px;
     
 }
 
-.attribution { font-size: 11px; text-align: center; }
+div{
+    font-family: var(--font1);
+    color: var(--corgrayish);
+    padding: 15px;
+}
+
+.attribution { 
+    font-size: 12px; 
+    text-align: center; 
+}
     
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a {
+    color: var(--corgrayish);
+     text-decoration: none;
+     font-weight: bold;
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+    color: hsl(228, 45%, 44%);
+}
