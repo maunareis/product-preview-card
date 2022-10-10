@@ -26,8 +26,7 @@ body{
 }
 
 main{
-    width: 350px;
-    height: 580px;
+    max-width: 350px;
     border-radius: 15px;
     background-color: var(--corwhite);
     margin: auto;
@@ -37,6 +36,11 @@ main{
 picture{
     align-self: center;
     display: flex; /*parei aqui verificar */
+}
+
+aside{
+    width: 350px;
+    margin: auto;
 }
 
 h2{
@@ -75,7 +79,8 @@ p.valor{
     display: inline-block;
     font-size: 12px;
     padding-left: 0px;
-    /* border:  2px solid black; */
+    border:  2px solid black;
+    vertical-align: middle;
 }
 
 button{
@@ -91,13 +96,8 @@ button{
     
 }
 
-div{
-    font-family: var(--font1);
-    color: var(--corgrayish);
-    padding: 15px;
-}
-
 .attribution { 
+    padding: 20px;
     font-size: 12px; 
     text-align: center; 
 }
