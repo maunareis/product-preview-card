@@ -23,10 +23,16 @@
 
 body{
     background-color: var(--corcream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 main{
-    max-width: 350px;
+    display: block;
+    width: 300px;
+    justify-content: right;
     border-radius: 15px;
     background-color: var(--corwhite);
     margin: auto;
@@ -34,13 +40,15 @@ main{
 }
 
 picture{
-    align-self: center;
-    display: flex; /*parei aqui verificar */
+    /* align-self: center; */
+    justify-content: left;
+    width: 300px;
 }
 
 aside{
     width: 350px;
     margin: auto;
+    display: block;
 }
 
 h2{
